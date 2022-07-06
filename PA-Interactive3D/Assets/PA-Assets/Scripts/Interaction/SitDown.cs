@@ -21,16 +21,15 @@ public class SitDown : InteractableObject
         isTeleported = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isTeleported && Input.GetKeyDown(KeyCode.E))
         {
-            print(savePlayerPosition);
+            movement.enabled = true; print("UPDATE: " + savePlayerPosition) ;
             player.transform.position = savePlayerPosition;
             player.transform.eulerAngles = savePlayerRotation;
 
-            movement.enabled = true;
+            
             isTeleported = false;
         }
 
@@ -42,7 +41,7 @@ public class SitDown : InteractableObject
         if (!isTeleported) 
         {
             print("hallo");
-            TeleportPlayer(); 
+            TeleportPlayer();
         }
     }
 
@@ -64,7 +63,12 @@ public class SitDown : InteractableObject
         player.transform.position = teleportPosition.position;
         player.transform.rotation = teleportPosition.rotation;
 
+        StartCoroutine(WaitForTeleport());
+    }
+
+    IEnumerator WaitForTeleport()
+    {
+        yield return new WaitForSeconds(0.3f);
         isTeleported = true;
-        print(savePlayerPosition);
     }
 }
