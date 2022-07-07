@@ -6,11 +6,24 @@ public class OpenFridge : InteractableObject
 {
     public Animator moveFridge;
 
-    private bool currentState;
+    public bool currentStateFridge;
+
+    public GameObject fridgeLight;
 
     public override void TriggerInteraction()
     {
-        currentState = moveFridge.GetBool("fridgeOpened");
-        moveFridge.SetBool("fridgeOpened", !currentState);
+        currentStateFridge = moveFridge.GetBool("fridgeOpened");
+        moveFridge.SetBool("fridgeOpened", !currentStateFridge);
     }
+
+    void Update()
+    {
+        if (currentStateFridge == true)
+            fridgeLight.SetActive(false);
+
+        if(currentStateFridge == false)
+            fridgeLight.SetActive(true);
+
+    }
+
 }
