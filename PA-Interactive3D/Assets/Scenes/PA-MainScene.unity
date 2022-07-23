@@ -978,11 +978,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 74436829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 429bc4537e7f67943bff1468c7fcc360, type: 3}
+  m_Script: {fileID: 11500000, guid: c924dad0c1add6e4d87cac24a07a407e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '"E" open Drawer'
-  moveDrawer: {fileID: 74436834}
+  commandText: '"E" open Drawers'
+  openDrawer: {fileID: 74436834}
 --- !u!65 &74436833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandText: '"E" open Mirror Door'
-  openDoor: {fileID: 0}
+  openDoor: {fileID: 227188162}
   currentStateDoor: 0
 --- !u!65 &227188161
 BoxCollider:
@@ -5585,7 +5585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandText: '"E" open Mirror Door'
-  openDoor: {fileID: 0}
+  openDoor: {fileID: 888278486}
   currentStateDoor: 0
 --- !u!95 &888278486
 Animator:
@@ -14121,7 +14121,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8848e5f8c8617e14496a699fbdb3cc44, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8848e5f8c8617e14496a699fbdb3cc44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15416,7 +15416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandText: '"E" open Door'
-  openDoor: {fileID: 0}
+  openDoor: {fileID: 2125571342}
   currentStateDoor: 0
 --- !u!65 &2125571341
 BoxCollider:
