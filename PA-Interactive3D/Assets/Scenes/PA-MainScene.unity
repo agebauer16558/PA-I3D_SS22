@@ -964,6 +964,57 @@ Transform:
   m_Father: {fileID: 1203407721}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &74436829 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c72429a97ebb54941849110355abf075, type: 3}
+  m_PrefabInstance: {fileID: 348137406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74436832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74436829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 429bc4537e7f67943bff1468c7fcc360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Drawer'
+  moveDrawer: {fileID: 74436834}
+--- !u!65 &74436833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74436829}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29447198, y: 0.1510499, z: 0.41629252}
+  m_Center: {x: -0.00038585067, y: 0.15695164, z: -0.0788389}
+--- !u!95 &74436834
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74436829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ceb86c588ea68448a6d8adb71af1630, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &82415233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,9 +2137,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '"E" Open Left Mirror Door'
-  openMirrorDoor: {fileID: 227188162}
-  currentStateMirrorDoor: 0
+  commandText: '"E" open Mirror Door'
+  openDoor: {fileID: 0}
+  currentStateDoor: 0
 --- !u!65 &227188161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2815,7 +2866,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f1207aa0905d30c40a8075366bc5ace4, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f1207aa0905d30c40a8075366bc5ace4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5463,6 +5514,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 513e64291ab2cbf43a8ee70f43cf0500, type: 3}
   m_PrefabInstance: {fileID: 840775536}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &860536496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7392adc2250590469fb9bb429d8a2ca, type: 3}
+  m_PrefabInstance: {fileID: 2074597224}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &860536499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860536496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ba2204559f3c948b69fbe408bd2d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Doors'
+  openFrontDoor: {fileID: 860536500}
+  openSideDoor: {fileID: 1515576546}
+  currentStateDoor: 0
+--- !u!95 &860536500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860536496}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cca41b4835a6c4b4680de52812329109, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &860536501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860536496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0676916, y: 2.0939999, z: 0.050515704}
+  m_Center: {x: -0.53181934, y: 0.03734213, z: -0.01943636}
+--- !u!1 &888278482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dade8d3d60582bc4a9354c5cb1ea2001, type: 3}
+  m_PrefabInstance: {fileID: 1475234430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &888278485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888278482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Mirror Door'
+  openDoor: {fileID: 0}
+  currentStateDoor: 0
+--- !u!95 &888278486
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888278482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 730475f759022fe4c8b3b9f27365c3f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &888278487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888278482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40397176, y: 0.6525823, z: 0.01}
+  m_Center: {x: 0.20202683, y: -0.005307466, z: -0.00019433303}
 --- !u!1 &908907504
 GameObject:
   m_ObjectHideFlags: 0
@@ -10374,7 +10530,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: dade8d3d60582bc4a9354c5cb1ea2001, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dade8d3d60582bc4a9354c5cb1ea2001, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10539,6 +10695,111 @@ Transform:
   m_Father: {fileID: 1957115907}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1515576541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: add26ca24960cf042b42048697f981e1, type: 3}
+  m_PrefabInstance: {fileID: 1615573923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1515576544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515576541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56ba2204559f3c948b69fbe408bd2d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Doors'
+  openFrontDoor: {fileID: 860536500}
+  openSideDoor: {fileID: 1515576546}
+  currentStateDoor: 0
+--- !u!65 &1515576545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515576541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.050653186, y: 2.0939999, z: 1.071401}
+  m_Center: {x: -0.019082988, y: 0.03734213, z: -0.5342793}
+--- !u!95 &1515576546
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515576541}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b870e1e62f6bab444af63425956ca5cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1539650303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4246b95f3496f064294e33a2d06866a2, type: 3}
+  m_PrefabInstance: {fileID: 987215138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1539650306
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539650303}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6fb99a87343b197458798da42929cefa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1539650307
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539650303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.207, y: 0.23300001, z: 0.49479198}
+  m_Center: {x: 0.00033041835, y: 0.19822894, z: -0.0911167}
+--- !u!114 &1539650308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539650303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b0f796603bf3a4c8b55d712abca4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Drawers'
+  openTopDrawer: {fileID: 2018440808}
+  openBottomDrawer: {fileID: 1539650306}
 --- !u!1 &1542912178
 GameObject:
   m_ObjectHideFlags: 0
@@ -11011,6 +11272,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6b7f808bd2aad0049a4233fee0226283, type: 3}
   m_PrefabInstance: {fileID: 1558878505}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1566313119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 01d9f33ad4c7f424687fc8d3290726e6, type: 3}
+  m_PrefabInstance: {fileID: 1297856352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1566313122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566313119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Toilet'
+  openDoor: {fileID: 1566313123}
+  currentStateDoor: 0
+--- !u!95 &1566313123
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566313119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4642a12d2c40fdd42aaa6f7a30102f9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1566313124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566313119}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.68740016, y: 0.06068811, z: 0.547809}
+  m_Center: {x: -0.32384893, y: 0.002035209, z: 0.000000059604645}
 --- !u!1001 &1574529906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11814,7 +12127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7aa6d304e42b71640b4a88a6809a946e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00022935867
+      value: -0.0002293587
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7aa6d304e42b71640b4a88a6809a946e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13988,7 +14301,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 134.815, y: 0}
   m_SizeDelta: {x: 0, y: 40.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1988556581
@@ -14164,6 +14477,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f3065ef44f8e4e8f8092a934f612232, type: 3}
   m_PrefabInstance: {fileID: 2017248210}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2018440803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7aa6d304e42b71640b4a88a6809a946e, type: 3}
+  m_PrefabInstance: {fileID: 1609379634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2018440806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018440803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b0f796603bf3a4c8b55d712abca4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Drawers'
+  openTopDrawer: {fileID: 2018440808}
+  openBottomDrawer: {fileID: 1539650306}
+--- !u!65 &2018440807
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018440803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.207, y: 0.23299998, z: 0.49479198}
+  m_Center: {x: 0.00022932887, y: 0.20255482, z: -0.0911167}
+--- !u!95 &2018440808
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018440803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b5b106ea458b564891c2009aec75349, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2027690023
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14579,43 +14944,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 05ed64ff9857c4948a32afe88074390e, type: 3}
   m_PrefabInstance: {fileID: 2041328585}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2068874097 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6b7f808bd2aad0049a4233fee0226283, type: 3}
-  m_PrefabInstance: {fileID: 1558878505}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2068874098
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068874097}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 09b0a01485f0deb44838e7d8fdba5d55, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!65 &2068874099
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068874097}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.40979004, y: 0.6525823, z: 0.01}
-  m_Center: {x: 0.20483351, y: -0.005533099, z: -0.00019433303}
 --- !u!1001 &2069153365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15070,6 +15398,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b22baff3ab294c349b59412f43501e76, type: 3}
   m_PrefabInstance: {fileID: 1106230582}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2125571337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8848e5f8c8617e14496a699fbdb3cc44, type: 3}
+  m_PrefabInstance: {fileID: 1954196576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2125571340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125571337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandText: '"E" open Door'
+  openDoor: {fileID: 0}
+  currentStateDoor: 0
+--- !u!65 &2125571341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125571337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.294472, y: 0.617, z: 0.04015506}
+  m_Center: {x: 0.14345844, y: -0.0006046593, z: 0.01731718}
+--- !u!95 &2125571342
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125571337}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b9f74ed6838f0c44bc675b91b0c9c94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1081283812957423333
 PrefabInstance:
   m_ObjectHideFlags: 0
