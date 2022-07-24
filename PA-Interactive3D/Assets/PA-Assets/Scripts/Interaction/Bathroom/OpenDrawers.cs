@@ -12,10 +12,10 @@ public class OpenDrawers : InteractableObject
 
     public override void TriggerInteraction()
     {
+         currentStateDrawer = openBottomDrawer.GetBool("drawerOpened");
+        openBottomDrawer.SetBool("drawerOpened", !currentStateDrawer);     
+        
         currentStateDrawer = openTopDrawer.GetBool("drawerOpened");
         openTopDrawer.SetBool("drawerOpened", !currentStateDrawer);
-
-        currentStateDrawer = openBottomDrawer.GetBool("drawerOpened");
-        openBottomDrawer.SetBool("drawerOpened", !currentStateDrawer);
     }
 }
