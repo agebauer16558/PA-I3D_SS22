@@ -25,22 +25,22 @@ public class SitDown : InteractableObject
     {
         if (isTeleported && Input.GetKeyDown(KeyCode.E))
         {
-            movement.enabled = true; print("UPDATE: " + savePlayerPosition) ;
+            // Activate Character Controller again & reset Player Position to previous
+            movement.enabled = true; // print("UPDATE: " + savePlayerPosition);
             player.transform.position = savePlayerPosition;
             player.transform.eulerAngles = savePlayerRotation;
 
-            
+            // Player not anymore teleported
             isTeleported = false;
         }
 
-        print(isTeleported);
+        // print(message: isTeleported);
     }
 
     public override void TriggerInteraction()
     {
         if (!isTeleported) 
         {
-            print("hallo");
             TeleportPlayer();
         }
     }
@@ -50,7 +50,7 @@ public class SitDown : InteractableObject
         // Finds The Object for the Player in Scene 
         player = GameObject.FindGameObjectWithTag("Player");
 
-        // Disables Character Controller so Playe gets teleported
+        // Disables Character Controller so Player gets teleported
         movement = player.gameObject.GetComponent<CharacterController>();
 
         // Saves position before teleporting
@@ -63,6 +63,8 @@ public class SitDown : InteractableObject
         player.transform.position = teleportPosition.position;
         player.transform.rotation = teleportPosition.rotation;
 
+        // Waits 0.3 seconds until isTeleported = true 
+        // Otherwise if-Function in Update-Methode was accessed immediatley on Button press "e"
         StartCoroutine(WaitForTeleport());
     }
 
