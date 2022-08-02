@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OpenDrawers : InteractableObject
-{
+{    
+    public Animator openBottomDrawer;
+
     public Animator openTopDrawer;
 
-    public Animator openBottomDrawer;
 
     private bool currentStateDrawer;
 
