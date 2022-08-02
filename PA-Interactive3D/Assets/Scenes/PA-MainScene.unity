@@ -11991,7 +11991,6 @@ MonoBehaviour:
   m_Script: {fileID: 2033628703}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &1166097721
 Transform:
   m_ObjectHideFlags: 19
@@ -15279,8 +15278,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandText: '''E'' open Drawers'
-  openTopDrawer: {fileID: 2018440808}
   openBottomDrawer: {fileID: 1539650306}
+  openTopDrawer: {fileID: 2018440808}
 --- !u!1 &1542912178
 GameObject:
   m_ObjectHideFlags: 0
@@ -19904,8 +19903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   commandText: '''E'' open Drawers'
-  openTopDrawer: {fileID: 2018440808}
   openBottomDrawer: {fileID: 1539650306}
+  openTopDrawer: {fileID: 2018440808}
 --- !u!65 &2018440807
 BoxCollider:
   m_ObjectHideFlags: 0
