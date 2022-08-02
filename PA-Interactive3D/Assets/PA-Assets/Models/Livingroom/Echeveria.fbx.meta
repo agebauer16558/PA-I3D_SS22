@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50b50dc52f75160498879dc50745a7a6
+guid: 513e64291ab2cbf43a8ee70f43cf0500
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -33,37 +33,37 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: decorative_pot_tree_Height
-    second: {fileID: 2800000, guid: d82541d1b4879ab4aa814355326bd1d0, type: 3}
+    second: {fileID: 2800000, guid: 28898a7e56671d243bb96b8c6d8c8b9a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: decorative_pot_tree_Normal
-    second: {fileID: 2800000, guid: e67b10c7dc00ac041b4413a12f7dafd0, type: 3}
+    second: {fileID: 2800000, guid: 98eb23b44971f2f41a6b725e2729f1c9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: decorative_pot_tree_Roughness
-    second: {fileID: 2800000, guid: 26b5aee47233b6d458d9323eadebb39c, type: 3}
+    second: {fileID: 2800000, guid: b1d03628cbce54a498d86668d1e94e33, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: echeveria_Height
-    second: {fileID: 2800000, guid: fafc0388401d54f4d8eed93ba94bbe75, type: 3}
+    second: {fileID: 2800000, guid: 7bf9cc1dc9ad6454c925a9f8da9e9174, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: echeveria_Normal
-    second: {fileID: 2800000, guid: 920224ff3b2a76d4ebe54d0df8e68fc1, type: 3}
+    second: {fileID: 2800000, guid: fc0800b9dee05dd43b127c8157f24d16, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: echeveria_Roughness
-    second: {fileID: 2800000, guid: e43d78bb4cdc4814687c3fa20135d03b, type: 3}
+    second: {fileID: 2800000, guid: bd50d22c34dc9044a91e4a89676e619d, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: soil
-    second: {fileID: 2800000, guid: 8eb031ddf637d58489a28b812850d7a6, type: 3}
+    second: {fileID: 2800000, guid: e664616df1ba975499d5cdc8f8f486f3, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
