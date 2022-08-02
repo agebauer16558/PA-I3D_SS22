@@ -2497,7 +2497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Mirror Door'
+  commandText: '''E'' Open Mirror Door'
   openDoor: {fileID: 227188162}
   currentStateDoor: 0
 --- !u!65 &227188161
@@ -4976,7 +4976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f8a9d7834620ac47a27b8acebd39ce8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Drawer'
+  commandText: '''E'' Open Drawer'
   openDrawer: {fileID: 501430259}
 --- !u!65 &501430258
 BoxCollider:
@@ -5976,7 +5976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7b4fdaa00cf8f43bf3badf8b6a5f6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' change Material'
+  commandText: '''E'' Change Material'
   materials:
   - {fileID: 2100000, guid: f0373a0095d5641258c6a46291777964, type: 2}
   - {fileID: 2100000, guid: b50c81ef3ef5346d9a95a24c2cab51db, type: 2}
@@ -8000,7 +8000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ba2204559f3c948b69fbe408bd2d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Doors'
+  commandText: '''E'' Open Doors'
   openFrontDoor: {fileID: 860536500}
   openSideDoor: {fileID: 1515576546}
   currentStateDoor: 0
@@ -8123,7 +8123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Mirror Door'
+  commandText: '''E'' Open Mirror Door'
   openDoor: {fileID: 888278486}
   currentStateDoor: 0
 --- !u!95 &888278486
@@ -11828,7 +11828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ae4e102c3d949e1ac5350a204bcbfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Door'
+  commandText: '''E'' Open Door'
   moveDoorBath: {fileID: 1157523880}
 --- !u!1001 &1159393422
 PrefabInstance:
@@ -15250,7 +15250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ba2204559f3c948b69fbe408bd2d54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Doors'
+  commandText: '''E'' Open Doors'
   openFrontDoor: {fileID: 860536500}
   openSideDoor: {fileID: 1515576546}
   currentStateDoor: 0
@@ -15335,7 +15335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b0f796603bf3a4c8b55d712abca4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Drawers'
+  commandText: '''E'' Open Drawers'
   openBottomDrawer: {fileID: 1539650306}
   openTopDrawer: {fileID: 2018440808}
 --- !u!1 &1542912178
@@ -15974,7 +15974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Toilet'
+  commandText: '''E'' Open Toilet'
   openDoor: {fileID: 1566313123}
   currentStateDoor: 0
 --- !u!95 &1566313123
@@ -19403,7 +19403,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8848e5f8c8617e14496a699fbdb3cc44, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8848e5f8c8617e14496a699fbdb3cc44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19995,7 +19995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b0f796603bf3a4c8b55d712abca4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Drawers'
+  commandText: '''E'' Open Drawers'
   openBottomDrawer: {fileID: 1539650306}
   openTopDrawer: {fileID: 2018440808}
 --- !u!65 &2018440807
@@ -21338,7 +21338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884082b5a32fd6a4c9e4e5dbfb3fcc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commandText: '''E'' open Door'
+  commandText: '''E'' Open Door'
   openDoor: {fileID: 2125571342}
   currentStateDoor: 0
 --- !u!65 &2125571341
